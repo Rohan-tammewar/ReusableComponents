@@ -1,0 +1,37 @@
+for each row
+get row item
+if key exist in dictionary(string,int)
+value = value+1;
+else 
+key:role
+value:1
+//Dictionary is created
+for each row 
+get row item
+if variable.value>0
+write role position salary
+
+
+Given an input list of countries please sort the list and print the first 3 values in descending order.
+
+Note: Please use this value for the List initialization: new List(of String) from {"Germany", "Spain", "Japan", "Brazil", "India", "China"}
+Solution:
+Create a list of type string and initiate it 
+After intializing the list store the values using from
+create a new string and invoke method function sort method and pass
+create another invoke and call the reverse method
+for printing values use string.join method 
+
+Given an input list of strings in format dd.MM.yyyy, please check if any of the dates has the same month as current month and print that date to output. 
+
+For the dates having a different month, print to output the number of days that passed/due from the current date to date from list (in the current year).
+
+Note: Initialize a list with the following value: new List(of String) from {"01.02.1980", "04.05.1985","06.08.1988","24.09.1999","18.11.1986","11.10.1983"}
+Solution:
+list of string with following dates
+use for each row to traverse through each date
+first convert the string to date using DateTime.parse store it into a variable
+get the month of that day by create a new date varible and extract month out of it
+create a new date variable with the current month'
+use nested if else to print the date 
+to print number of days use datediff function assign it to a variable and print it
